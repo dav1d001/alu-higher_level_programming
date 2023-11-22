@@ -7,7 +7,7 @@ This module provides a simple Rectangle class.
 
 class Rectangle:
     """A Rectangle class with attributes width and height, and
-    methods area and perimiter.
+    methods area, perimeter, print, and str.
     """
     def __init__(self, width=0, height=0):
         self.width = width
@@ -36,6 +36,16 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def __str__(self):
+        total = ""
+        if self.__height == 0 or self.width == 0:
+            return total
+        for i in range(self.__height):
+            total += ("#" * self.__width)
+            if i is not self.__height - 1:
+                total += "\n"
+        return total
 
     def area(self):
         return self.__width * self.__height
