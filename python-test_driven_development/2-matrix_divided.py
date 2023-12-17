@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Divides all elements of a matrix
+To divide all elements of a matrix
 """
 
 
@@ -29,7 +29,7 @@ def matrix_divided(matrix, div):
 
     for i in range(len(matrix)):
         if type(matrix[i]) is not list:
-            raise TypeError("matrix has to be a matrix (list of lists)"
+            raise TypeError("matrix must be a matrix (list of lists)"
                             " of integers/floats")
         inside = []
         for j in range(len(matrix[i])):
@@ -39,7 +39,7 @@ def matrix_divided(matrix, div):
                                 " of integers/floats")
             if len(matrix[0]) != len(matrix[i]):
                 raise TypeError("Each row of the matrix"
-                                " has to have the same size")
+                                " must have the same size")
             inside.append(round((matrix[i][j]) / div, 2))
         new.append(inside)
     return new

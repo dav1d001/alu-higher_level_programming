@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-to print text in special format
+To print text in special format
 """
 
 
 def text_indentation(text):
-    """to print a text with 2 new lines after each of these characters: . ? :
+    """prints a text with 2 new lines after each of these characters: . ? :
     Args:
         text (str): a string
     Raises:

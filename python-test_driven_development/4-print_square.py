@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-to print a square
+To print a square
 """
 
 
