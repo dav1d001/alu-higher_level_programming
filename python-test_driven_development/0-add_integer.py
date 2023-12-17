@@ -5,7 +5,7 @@ To add integers
 
 
 def add_integer(a, b=98):
-    """ To add two integers
+    """ adding two integers
     Args:
         a (int): integer value
         b (int): integer value if specified, otherwise 98
